@@ -10,12 +10,12 @@
 <h1>Tell us about your business.</h1>
 <p class="sub">Takes about 2 minutes. We start your audit as soon as this is in, and email your report within <span class="tok">{{DELIVERY_TIME}}</span>.</p>
 <div class="card"><form action="{{INTAKE_FORM_ACTION}}" onsubmit="alert('Preview: form not connected.');return false;">
-<label>Business name</label><input required placeholder="e.g. Smith Plumbing">
-<label>Google Business Profile link, or your business address</label><input required placeholder="Paste your Google Maps link, or type the address">
-<label>Top searches you want to show up for (up to <span class="tok">{{KEYWORD_COUNT}}</span>)</label><textarea rows="3" required placeholder="e.g. plumber bensalem, water heater repair, emergency plumber"></textarea>
-<div class="row"><div><label>Your email (we send the report here)</label><input type="email" required placeholder="you@business.com"></div>
-<div><label>Website (optional)</label><input placeholder="yourbusiness.com"></div></div>
-<label>Anything else we should know? (optional)</label><textarea rows="2" placeholder="e.g. we just moved, we added a new service"></textarea>
+<label>Business name</label><input name="business_name" required placeholder="e.g. Smith Plumbing">
+<label>Google Business Profile link, or your business address</label><input name="google_profile_or_address" required placeholder="Paste your Google Maps link, or type the address">
+<label>Top searches you want to show up for (up to <span class="tok">{{KEYWORD_COUNT}}</span>)</label><textarea name="top_searches" rows="3" required placeholder="e.g. plumber bensalem, water heater repair, emergency plumber"></textarea>
+<div class="row"><div><label>Your email (we send the report here)</label><input type="email" name="email" required placeholder="you@business.com"></div>
+<div><label>Website (optional)</label><input name="website" placeholder="yourbusiness.com"></div></div>
+<label>Anything else we should know? (optional)</label><textarea name="notes" rows="2" placeholder="e.g. we just moved, we added a new service"></textarea>
 <p><button class="btn" type="submit">Send and start my audit &rarr;</button></p>
 <p class="note">No Google sign-in or passwords needed. We only use this to prepare your audit. <a href="https://tacticalsi.io/privacy.html">Privacy</a>.</p>
 </form></div></div></section>
