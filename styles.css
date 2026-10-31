@@ -38,3 +38,4 @@ th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vert
 .upsell{align-items:center}section.cta{background:var(--navy);color:#C9D3E6}
 header .wrap{gap:10px}header nav .btn{padding:10px 14px;font-size:14px}
 @media(max-width:820px){.feats{grid-template-columns:1fr}.feat{flex-direction:column;gap:4px}th,td{padding:10px;font-size:14px}header nav .btn{padding:8px 10px;font-size:13px}}
+@media(max-width:1000px){nav a{margin-left:11px;font-size:13px}}
